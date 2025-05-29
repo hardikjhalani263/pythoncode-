@@ -122,9 +122,6 @@
 
 # q. 15
 
-# Python Program to find the factors of a number
-
-# This function computes the factor of the argument passed
 def print_factors(x , y):
    print("The factors of",x,y ,"are:")
    for i in range( x , y + 1):
@@ -135,3 +132,28 @@ def print_factors(x , y):
 num = int(input("enter a no."))
 num1 = int(input("enter a no."))
 print_factors(num , num1)
+
+def age_group(age):
+    """
+    This function takes an age as input and returns the corresponding age group.
+    """
+    if age <= 0:
+        return "Invalid Age"
+    elif age <= 1:
+        return "Infant"
+    elif age <= 4:
+        return "Toddler"
+    elif age <= 12:
+        return "Child"
+    elif age <= 19:
+        return "Teenager"
+    elif age <= 59:
+        return "Adult"
+    else:
+        return "Senior"
+
+# Example usage
+age = int(input("Enter your age: "))
+print(age_group(age))
+
+
