@@ -121,9 +121,77 @@
 #     y+=1
 #   print(" ")
 
-# python pattern 
-for i in range(1,8):
 
-  for j in range(1,i+1):
-    print("*" ,end="")
-  print(" ")
+
+
+# python pattern 
+
+
+# for i in range(1,5):
+#   for j in range(1,i+1):
+#     print("*" ,end="")
+#   print(" ")
+
+# for i in range(1,5):
+#   for j in range(1,i+1):
+#     print(j ,end="")
+#   print(" ")
+
+# a = 1
+# for i in range(1,5):
+#   for j in range(1,i+1):
+#     print(a , end="")
+#     a +=1
+#   print(" ")
+
+# for i in range(5,0,-1):
+#   for j in range(i,0,-1):
+#     print("*",end="")
+#   print(" ")
+
+# for i in range(1,5):
+#   for j in range(1,i+1):
+#     print(i,end="")
+#   print(" ")
+
+# for i in range(4,0,-1):
+#   a = 4
+#   for j in range(i,0,-1):
+#     print(a , end="")
+#     a -=1
+#   print(" ")
+
+# for i in range(1,5):
+#   x = 65
+#   for j in range(1,i+1):
+#     print(chr(x),end="")
+#     x+=1
+#   print(" ")
+
+# for i in range(5,0,-1):
+#   for j in range(1,i+1):
+#     print(j , end="")
+#   print(" ")
+
+# for i in range(7,1,-1):
+#   a =70
+#   for j in range(i,1,-1):
+#     print(chr(a),end="")
+#     a-=1
+#   print(" ")
+
+# for i in range(6,0,-1):
+#   for space in range(6-i,0,-1):
+#     print(" ",end=" ")
+#   for j in range(1,i):
+#     print("*",end=" ")
+#   print(" ")
+
+for i in range(5):
+  for k in range(5-i):
+    print("*",end=" ")
+  print()
+for i in range(1,5):
+  for j in range(0,i+1):
+    print("*",end=" ")
+  print()
