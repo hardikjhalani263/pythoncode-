@@ -161,9 +161,3 @@ def print_day(day_number):
 
 day = int(input("Enter a number (1-7): "))
 print_day(day)
-
-
-
-
-
-
