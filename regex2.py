@@ -151,10 +151,3 @@
 #       print("it is not a palimdrome",s)
 # else :
 #     print(" a palindrome" , s)
-
-for i in range (4 , 0 , -1):
- 
-    for j in range (5 , 0 , -1):
-       print (j, end = " ") 
-    print (" ")
-

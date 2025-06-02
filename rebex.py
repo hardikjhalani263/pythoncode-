@@ -122,38 +122,47 @@
 
 # q. 15
 
-def print_factors(x , y):
-   print("The factors of",x,y ,"are:")
-   for i in range( x , y + 1):
-       if x % i == 0:
-        if y % i == 0:    
-          print(i)
+# def print_factors(x , y):
+#    print("The factors of",x,y ,"are:")
+#    for i in range( x , y + 1):
+#        if x % i == 0:
+#         if y % i == 0:    
+#           print(i)
 
-num = int(input("enter a no."))
-num1 = int(input("enter a no."))
-print_factors(num , num1)
+# num = int(input("enter a no."))
+# num1 = int(input("enter a no."))
+# print_factors(num , num1)
 
-def age_group(age):
-    """
-    This function takes an age as input and returns the corresponding age group.
-    """
-    if age <= 0:
-        return "Invalid Age"
-    elif age <= 1:
-        return "Infant"
-    elif age <= 4:
-        return "Toddler"
-    elif age <= 12:
-        return "Child"
-    elif age <= 19:
-        return "Teenager"
-    elif age <= 59:
-        return "Adult"
-    else:
-        return "Senior"
+# for i in range (1,5):
+#       for j in range (1,5-i+1):
+#           print ("*" , end = ' ')
+#       print (' ')
 
-# Example usage
-age = int(input("Enter your age: "))
-print(age_group(age))
+# for i in range (1,5):
+#       x =66
+#       for j in range (1,5-i+1):
+#           print (x, end = ' ')
+#           x+=1
+#       print (' ')
 
+# x = 1
+# for i in range (1,5):
+#       for j in range (1,5-i+1):
+#           print (x, end = ' ')
+#           x+=1
+#       print (' ')
 
+# for i in range (1,5):
+#       x = 65
+#       for j in range (1,5-i+1):
+#           print (chr(x), end = ' ')
+#           x+=1
+#       print (' ')
+
+for i in range (1,5 ):
+    for j in range (1 ,i+1 ):
+        print (" ?" , end = ' ')
+    for k in range (1 , 5 -i+ 1 ):
+      print ( k , end = ' ')
+    print (" ")        
+    
