@@ -136,15 +136,18 @@ for i in range (len(mylist)):
          print(mylist[i], mylist[j])           
 
 mylist = [1, 2, 3, 4, 5]
-#n = len(mylist)
-for i in range(mylist // 2):
-    mylist[i], mylist[mylist - 1 - i] = mylist[mylist - 1 - i], mylist[i]
+n = len(mylist)
+for i in range(n // 2):
+    mylist[i], mylist[n - 1 - i] = mylist[n - 1 - i], mylist[i]
 print(mylist) 
 
 
+mydictionary ={101:"hardik ", "salary": 20000 , "email":"hardikjhalani@gmail.com"}
+print(mydictionary)
    
+mydictionary ={101:"hardik ", "salary": 20000 , "email":"hardikjhalani@gmail.com"}
+print(mydictionary["email"])
+mydictionary["email"]="hardikjhalani263@gmail.com"    #update
+print(mydictionary)
 
-
-
-
-
+mydictionary["add "] = "jaipur "         #insert
