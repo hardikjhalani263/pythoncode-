@@ -142,6 +142,15 @@ for i in range(n // 2):
 print(mylist) 
 
 
+
+#tuple 
+
+x = (10,20, "abc", 10,20,30,40)
+print ( x.count(10))
+print (  x.type(30))
+# x [0] = 19   # we can't insert , update , delete
+
+
 mydictionary ={101:"hardik ", "salary": 20000 , "email":"hardikjhalani@gmail.com"}
 print(mydictionary)
    
@@ -151,3 +160,27 @@ mydictionary["email"]="hardikjhalani263@gmail.com"    #update
 print(mydictionary)
 
 mydictionary["add "] = "jaipur "         #insert
+
+mydictionary={10:"a" , 20:"b"}
+for i in mydictionary.key():
+   print (i,mydictionary[i])
+
+mydictionary= {10:"a", "amount": 100}
+mydictionary["amount"]= mydictionary["amount"]+5
+print(mydictionary)   
+
+s = "Raj5"
+d = {'total':0}
+for i in s:
+    d["total"]+=1
+print(d)
+
+
+s = "abc"
+x = {}
+for i in s:
+    if i in x:
+        x[i]+=1
+    else:
+        x[i]=1
+print(x)
