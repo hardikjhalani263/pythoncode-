@@ -182,8 +182,139 @@
 #         o+=1
 #     print()        
 
+# question 18
+# rows = 5
+# for i in range(1, rows + 1):
+#     p =1  
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):   
+#             print(p, end=" ")
+#             p+=1
+#     else:
+#             print(" ", end=" ")  
+#     print()
+
+# rows = 5
+# for i in range(rows , 0 ,-1):  
+#     o = 1
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):  
+#             print(o, end=" ")
+#             o +=1
+#     else:
+#             print(" ", end=" ")  
+#     print()
+
+#question 18
+
+# rows = 5
+# for i in range(1, rows + 1): 
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):   
+#             print("*", end=" ")
+#     else:
+#             print(" ", end=" ")  
+#     print()
+
+# rows = 5
+# for i in range(rows , 0 ,-1):  
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):  
+#             print("*", end=" ")
+#     else:
+#             print(" ", end=" ")  
+#     print()
+
+
 #question 19
+# rows = 5
+# for i in range(rows , 0 ,-1):  
+#     o = 1
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):  
+#             print(o, end=" ")
+#             o +=1
+#     else:
+#             print(" ", end=" ")  
+#     print()
 
-row = 5 
+# rows = 5
+# for i in range(1, rows + 1):
+#     p =1  
+#     for j in range(rows  - i):  
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):   
+#             print(p, end=" ")
+#             p+=1
+#     else:
+#             print(" ", end=" ")  
+#     print()
 
+#question 20
+# row = 5 
+# for i in range (1 , row +1 ):
+#     p = 1
+#     for j in range ( 1 , row +1):
+#         if (j ==row or i == row or j== 1 or i== 1 ):
+#             print (p, end = "" )
+#             p +=1
+#         else :
+#             print ("" , end = " ")
+#     print ()    
 
+#question 20
+# row = 5 
+# for i in range (1 , row +1 ):
+#     p = 65
+#     for j in range ( 1 , row +1):
+#         if (j ==row or i == row or j== 1 or i== 1 ):
+#             print (chr(p), end = "" )
+#             p +=1
+#         else :
+#             print ("" , end = " ")
+#     print ()    
+
+#question 21
+rows = int(input("Enter the row size for the pattern: "))
+for i in range(1, rows + 1):  # Upper part of diamond
+    for j in range(rows - i):
+        print(" ", end=" ")
+    for k in range(1, 2 * i):
+        if k == 1 or k == 2 * i - 1:  # Print star on borders
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")  # Print space inside
+    print()
+for i in range(rows - 1, 0, -1):  # Lower part of diamond
+    for j in range(rows - i):
+        print(" ", end=" ")
+    for k in range(1, 2 * i):
+        if k == 1 or k == 2 * i - 1:  # Print star on borders
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")  # Print space inside
+    print()
+
+#question 23
+# rows = int(input("Enter the row size for the pattern: "))
+# for i in range(1, rows + 1): 
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     for j in range(2 * (rows - i)):
+#         print(" ", end=" ")
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+# for i in range(rows, 0, -1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     for j in range(2 * (rows - i)):
+#         print(" ", end=" ")
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
