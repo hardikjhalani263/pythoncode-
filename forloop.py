@@ -52,34 +52,27 @@ for i in range (n ):
 print (count ) 
 
 #question 8 
-number = 12345
-def first_and_last_digit(number):
-    number_str = str(number)
-    
-    for i in range(len(number_str)):
-        
-        if i == 0:
-            first_digit = number_str[i]
-        if i == len(number_str) - 1:
-            last_digit = number_str[i]
-        
-    return first_digit+ last_digit
-first_digit, last_digit = first_and_last_digit(number)
-print("First digit:", first_digit)
-print("Last digit:", last_digit)
+n = int(input("enter a no."))
+last = n %10 
+while(n>0):
+    first = n %10
+    n =n // 10 
+print (f"first last = {first , last}")
+
 
 # question 9 
-num = int(input ("enter a no. "))
-res = num % 10
-while num > 9:
-    num = num // 10
-res += num
-print('Addition of first and last digit of number is', res)
+n = int(input("enter a no."))
+last = n %10 
+q = 0
+while(n>0):
+    first = n %10
+    n =n // 10
+q = first + last 
+print (f"first last = {q}")
 
 #question 10
 n = int(input("Enter a number to reverse: "))
 num = 0
-
 for i in n:
     i = n % 10
     num = num * 10 + int(i)
@@ -87,40 +80,36 @@ for i in n:
 print(f"The reversed number is: {num}")
 
 #question 11
-a = float (input("enter a no . "))
-b = int(input("enter a no. "))
-def power(a, b):
-    result =1 
-    for i in range (b ):
-        result =a 
-        print (result)
-    result = power(a, b )
-print (a )
+base = int(input("Enter the base number: "))
+exponent = int(input("Enter the exponent (non-negative): "))
+result = 1
+for _ in range(exponent):
+    result *= base
+print(f"{base}^{exponent} = {result}")
+
 
 #question 12 
-def print_factors(x, y):
-    print("The common factors of", x,  "are:")
-    for i in range(1, x+ 1):
-        if x % i == 0 :
-            print(i)
-
-num = int(input("Enter the first number: "))
-print_factors(num, )    
+num = int (input("enter a positive no."))
+for i in range (1,num +1):
+    if (num % i == 0):
+        print (f"the factor of no are " , i  )
 
 #question 13 
-
-
+num = int(input("Enter a non-negative integer: "))
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial *i
+    print(f"The factorial of {num} is: {factorial}")
 
 #question 14 
-def print_factors(x, y):
-    print("The common factors of", x, "and", y, "are:")
-    for i in range(1, min(x, y) + 1):
-        if x % i == 0 and y % i == 0:
+x = int(input("Enter the first number: "))
+y= int(input("Enter the second number: "))
+for i in range(1, min(x, y) + 1):
+    if x % i == 0 and y % i == 0:
             print(i)
-
-num = int(input("Enter the first number: "))
-num1 = int(input("Enter the second number: "))
-print_factors(num, num1)
 
 # question 15 
 n = int (input ("enter a no ."))
@@ -129,3 +118,12 @@ if n >1 :
         if (n%i ==0 ):
             print (n , "is not a prime no .")
             break 
+        else :
+            print ("it is aprime no.")
+
+# question 16   
+
+
+
+
+# question 17
