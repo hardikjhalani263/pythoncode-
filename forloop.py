@@ -122,7 +122,74 @@ if n >1 :
             print ("it is aprime no.")
 
 # question 16   
-
+n = int(input("enter a number : "))
+for m in range(1,n+1):
+  count = 0
+  for i in range(1,n+1):
+    if(m%i==0):
+     count+=1
+  if(count==2):
+    print(m , end=" ")
 
 
 # question 17
+n = int(input("enter a number "))
+for i in range(1,n+1):
+  if(n%i==0):
+   print(i , end = " ")
+
+# question 18 
+n = int(input("enter a number : "))
+count = 0
+total = 0
+temp = n
+while(temp>0):
+  count+=1
+  temp = temp//10
+temp = n
+while(temp>0):
+  rem = temp%10
+  total = total+rem**count
+  temp = temp//10
+if(total == n):
+  print("armstrong")
+else:
+  print("not armstrong")
+
+#question 19
+n = int(input("enter a number : "))
+temp = n
+total = 0
+while(temp >0):
+  rem = temp%10
+  factorial = 1
+  for i in range(1,rem+1):
+    factorial *=i
+  total += factorial
+  temp = temp//10
+if(total == n):
+  print("strong")
+else:
+  print("not strong")
+
+ # question 20
+n = int(input("enter a number : "))
+sum = 0
+for i in range(1,n):
+  if(n%i==0):
+    sum +=i
+if(sum==n):
+  print("perfect")
+else:
+  print("not perfect")
+ 
+# question 21
+n = int(input("enter a number : "))
+a = 0
+b = 1
+for i in range(2,n+1):
+  next = a+b
+  a = b
+  b = next
+  print(b , end = " ") 
+  
