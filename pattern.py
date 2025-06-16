@@ -1,7 +1,7 @@
 # for i in range (1,5):
 #     for k in range (1,5 ):
 #         print (i , end = " ")
-#     print (' ')    
+#     print (' ')       
 
 
 # for i in range (1,5):
@@ -31,12 +31,16 @@
 #      a+=1
 #   print(" ")
 
+
+
 # for i in range (1,5):
 #     x = 65
 #     for k in range (1,i+1):
 #         print(chr(x) , end = ' ')
 #         x +=1
 #     print (" ")    
+
+
 
 # for i in range (1,5):
 #     x = 68
@@ -45,6 +49,8 @@
 #         x -=1
 #     print (" ")
 
+
+
 # for i in range(4,0,-1):
 #   x= 68
 #   for j in range(i,0,-1):
@@ -52,12 +58,16 @@
 #     x-=1
 #   print(" ")
 
+
+
 # x = 70
 # for i in range(1,5):
 #   for j in range(1,i+1):
 #      print(chr(x) , end = " ")
 #      x = x+2
 #   print(" ")
+
+
 
 # for i in range(1,6):
 #   for j in range(1,i+1):
@@ -67,7 +77,11 @@
 #       print(2, end=" ")
 #   print(" ")
 
+
+
 # assiment pattern
+
+
 
 # for i in range (1,5):
 #   a = 1
@@ -76,12 +90,14 @@
 #     a+=1
 #   print(" ")
 
+
 # a = 1
 # for i in range (1,5):
 #   for j in range(1,i+1):
 #     print(a, end=" ")
 #     a+=1
 #   print(" ")
+
 
 # a = 10
 # for i in range(1,5):
@@ -90,12 +106,14 @@
 #       a-=1
 #     print(" ")
 
+
 # x = 65
 # for i in range(1,4):
 #   for j in range(1,i+1):
 #     print(chr(x), end=" ")
 #     x += 1
 #   print(" ")
+
 
 # x = 90
 # for i in range(1,4):
@@ -104,6 +122,7 @@
 #     x -= 1
 #   print(" ")
 
+
 # for i in range(1,6):
 #   for j in range(1,i+1):
 #     if(j==1 or j==i or i==5):
@@ -111,6 +130,7 @@
 #     else:
 #       print(" ",end=" ")
 #   print(" ")
+
 
 # x = 97
 # y = 1
@@ -127,15 +147,19 @@
 # python pattern 
 
 
+
+
 # for i in range(1,5):
 #   for j in range(1,i+1):
 #     print("*" ,end="")
 #   print(" ")
 
+
 # for i in range(1,5):
 #   for j in range(1,i+1):
 #     print(j ,end="")
 #   print(" ")
+
 
 # a = 1
 # for i in range(1,5):
@@ -144,15 +168,18 @@
 #     a +=1
 #   print(" ")
 
+
 # for i in range(5,0,-1):
 #   for j in range(i,0,-1):
 #     print("*",end="")
 #   print(" ")
 
+
 # for i in range(1,5):
 #   for j in range(1,i+1):
 #     print(i,end="")
 #   print(" ")
+
 
 # for i in range(4,0,-1):
 #   a = 4
@@ -161,6 +188,7 @@
 #     a -=1
 #   print(" ")
 
+
 # for i in range(1,5):
 #   x = 65
 #   for j in range(1,i+1):
@@ -168,10 +196,12 @@
 #     x+=1
 #   print(" ")
 
+
 # for i in range(5,0,-1):
 #   for j in range(1,i+1):
 #     print(j , end="")
 #   print(" ")
+
 
 # for i in range(7,1,-1):
 #   a =70
@@ -180,6 +210,7 @@
 #     a-=1
 #   print(" ")
 
+
 # for i in range(6,0,-1):
 #   for space in range(6-i,0,-1):
 #     print(" ",end=" ")
@@ -187,11 +218,12 @@
 #     print("*",end=" ")
 #   print(" ")
 
-for i in range(5):
-  for k in range(5-i):
-    print("*",end=" ")
-  print()
-for i in range(1,5):
-  for j in range(0,i+1):
-    print("*",end=" ")
-  print()
+
+# for i in range(5):
+#   for k in range(5-i):
+#     print("*",end=" ")
+#   print()
+# for i in range(1,5):
+#   for j in range(0,i+1):
+#     print("*",end=" ")
+#   print()
