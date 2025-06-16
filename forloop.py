@@ -8,6 +8,7 @@ for n in range (1 , i+1 ) :
         print (" it is not a positive no . ")
 print (n ) 
 
+
 #question 2 
 n = int (input ("enter a positive intiger "))
 for i in range (n , 0 , -1 ):
@@ -16,17 +17,20 @@ for i in range (n , 0 , -1 ):
     else :
         print ("enter a positive intiger greater than 0 ")
 
+
 # question 3 
 char = 'a '
 while char <='z':
     print (char , end = " ")
     char = char
 
+
 # question 4 
 for i in range (2 , 101):
     if (n % 2 ==0 ):
         print ("it is a even no . ")
         print (i )
+
 
 # question 5 
 n = int (input ("enter a positive intiger "))
@@ -37,6 +41,7 @@ for i in range (1 , n+1):
         sum +=i
 print ("sum of odd no. is 1 to" , n , sum )
 
+
 # question 6 
 n = 45678
 count = 0 
@@ -44,12 +49,14 @@ for i in range (n ):
     count +1 
 print (count)     
 
+
 # question 7 
 n = int (input("enter a valied no. "))
 count = 0 
 for i in range (n ):
     count +int (i )
 print (count ) 
+
 
 #question 8 
 n = int(input("enter a no."))
@@ -70,6 +77,7 @@ while(n>0):
 q = first + last 
 print (f"first last = {q}")
 
+
 #question 10
 n = int(input("Enter a number to reverse: "))
 num = 0
@@ -78,6 +86,7 @@ for i in n:
     num = num * 10 + int(i)
     n = n//10
 print(f"The reversed number is: {num}")
+
 
 #question 11
 base = int(input("Enter the base number: "))
@@ -94,6 +103,7 @@ for i in range (1,num +1):
     if (num % i == 0):
         print (f"the factor of no are " , i  )
 
+
 #question 13 
 num = int(input("Enter a non-negative integer: "))
 if num < 0:
@@ -104,12 +114,14 @@ else:
         factorial *i
     print(f"The factorial of {num} is: {factorial}")
 
+
 #question 14 
 x = int(input("Enter the first number: "))
 y= int(input("Enter the second number: "))
 for i in range(1, min(x, y) + 1):
     if x % i == 0 and y % i == 0:
             print(i)
+
 
 # question 15 
 n = int (input ("enter a no ."))
@@ -120,6 +132,7 @@ if n >1 :
             break 
         else :
             print ("it is aprime no.")
+
 
 # question 16   
 n = int(input("enter a number : "))
@@ -137,6 +150,7 @@ n = int(input("enter a number "))
 for i in range(1,n+1):
   if(n%i==0):
    print(i , end = " ")
+
 
 # question 18 
 n = int(input("enter a number : "))
@@ -156,6 +170,7 @@ if(total == n):
 else:
   print("not armstrong")
 
+
 #question 19
 n = int(input("enter a number : "))
 temp = n
@@ -172,6 +187,7 @@ if(total == n):
 else:
   print("not strong")
 
+
  # question 20
 n = int(input("enter a number : "))
 sum = 0
@@ -183,6 +199,7 @@ if(sum==n):
 else:
   print("not perfect")
  
+
 # question 21
 n = int(input("enter a number : "))
 a = 0
@@ -191,5 +208,4 @@ for i in range(2,n+1):
   next = a+b
   a = b
   b = next
-  print(b , end = " ") 
-  
+  print(b , end = " ")   
