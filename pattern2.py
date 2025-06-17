@@ -7,6 +7,7 @@
 #         print("*", end="")
 #     print()
  
+
 # question 1
 # row = 5 
 # for i in range (1 , row +1 ):
@@ -17,6 +18,7 @@
 #             print ("" , end = " ")
 #     print ()                
 
+
 # question 2
 #for i in range(1,5):
 #   x = 65
@@ -24,6 +26,7 @@
 #     print(chr(x),end="")
 #     x+=1
 #   print(" ")
+
 
 #question 3
 #x =65
@@ -33,11 +36,13 @@
 #   x+=1
 #   print(" ")
 
+
 # question 4
 # rows = 5
 # for j in range(1, rows+1):
 #     print("* " * j)
  
+
 # question 5
 # row = 6
 # for i in range (1 , row ):
@@ -49,6 +54,7 @@
 #             print ( num , end = " ")
 #             num +=1
 #    print (" ")              
+
 
 # question 6
 # row = 6
@@ -62,6 +68,7 @@
 #             num +=1
 #     print (" ")         
 # 
+
 # question 8 
 # num = 5
 # for i in range(num , 0 ,-1):
@@ -70,6 +77,7 @@
 #     for j in range(0, num):
 #         print("*", end = " ")
 #     print( ) 
+
 
 # question 9 
 # num = int(input("Enter the number:"))
@@ -82,6 +90,7 @@
 #         o+=1  
 #     print( ) 
 
+
 # question 10
 # num = int(input("Enter the number:"))
 # for i in range(num , 0 ,-1):
@@ -93,6 +102,7 @@
 #         o+=1  
 #     print( )   
 
+
 #question 11
 # rows = 5
 # for i in range(1, rows + 1):  
@@ -101,6 +111,7 @@
 #     for k in range(1, 2 * i): 
 #         print("*", end=" ")
 #     print()
+
 
 # question 12 
 # rows = 5
@@ -114,6 +125,7 @@
 #             print(" ", end=" ")  
 #     print()
 
+
 # question 13
 # rows = 5
 # for i in range(rows , 0 ,-1):  
@@ -126,6 +138,7 @@
 #             print(" ", end=" ")  
 #     print()
 
+
 # question 14
 # raw = 5
 # for i in range (0 , raw):
@@ -137,6 +150,7 @@
 #             print("*", end = " ")
 #         print ( )    
 
+
 # question 15
 # raw = 5
 # for i in range (0 , raw):
@@ -147,6 +161,7 @@
 #         for k in range (0,i-1):
 #             print("*", end = " ")
 #         print ( )    
+
 
 #question 16
 # rows = int(input("Enter the row size for the pattern: "))
@@ -162,6 +177,7 @@
 #     for k in range(1, 2 * i):
 #         print("*", end=" ")
 #     print()        
+
 
 #question 17
 # rows = int(input("Enter the row size for the pattern: "))
@@ -181,6 +197,7 @@
 #         print(o, end=" ")
 #         o+=1
 #     print()        
+
 
 # question 18
 # rows = 5
@@ -208,7 +225,6 @@
 #     print()
 
 #question 18
-
 # rows = 5
 # for i in range(1, rows + 1): 
 #     for j in range(rows  - i):  
@@ -218,6 +234,7 @@
 #     else:
 #             print(" ", end=" ")  
 #     print()
+
 
 # rows = 5
 # for i in range(rows , 0 ,-1):  
@@ -267,6 +284,7 @@
 #             print ("" , end = " ")
 #     print ()    
 
+
 #question 20
 # row = 5 
 # for i in range (1 , row +1 ):
@@ -279,26 +297,28 @@
 #             print ("" , end = " ")
 #     print ()    
 
+
 #question 21
-rows = int(input("Enter the row size for the pattern: "))
-for i in range(1, rows + 1):  # Upper part of diamond
-    for j in range(rows - i):
-        print(" ", end=" ")
-    for k in range(1, 2 * i):
-        if k == 1 or k == 2 * i - 1:  # Print star on borders
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")  # Print space inside
-    print()
-for i in range(rows - 1, 0, -1):  # Lower part of diamond
-    for j in range(rows - i):
-        print(" ", end=" ")
-    for k in range(1, 2 * i):
-        if k == 1 or k == 2 * i - 1:  # Print star on borders
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")  # Print space inside
-    print()
+# rows = 5
+# for i in range(1, rows + 1):  
+#     for j in range(rows - i):
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):
+#         if k == 1 or k == 2 * i - 1: 
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")  
+#     print()
+# for i in range(rows - 1, 0, -1): 
+#     for j in range(rows - i):
+#         print(" ", end=" ")
+#     for k in range(1, 2 * i):
+#         if k == 1 or k == 2 * i - 1:  
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")  
+#     print()
+
 
 #question 23
 # rows = int(input("Enter the row size for the pattern: "))
