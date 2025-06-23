@@ -56,20 +56,65 @@
   
 
 #question 7
-lst = [1, [2, 3], [4, [5, 6], 7], 8]
-a = []
+# lst = [1, [2, 3], [4, [5, 6], 7], 8]
+# a = []
 
-for item in lst:
-    if isinstance(item, list):
-        for subitem in item:
-            if isinstance(subitem, list):
-                a.extend(subitem)
-            else:
-                a.append(subitem)
-    else:
-        a.append(item)
+# for item in lst:
+#     if isinstance(item, list):
+#         for subitem in item:
+#             if isinstance(subitem, list):
+#                 a.extend(subitem)
+#             else:
+#                 a.append(subitem)
+#     else:
+#         a.append(item)
 
-print("flattened list:", a)
+# print("flattened list:", a)
 
 
+# question 8 
+# list = [1,2,3,4,5,6]
+# target = 9
+# pairs = []
+# for i in range (len(list)):
+#     for j in range (i+1,len(list)):
+#         if(list [i] +list[j] == target):
+#             pairs.append (list[i], list[j])
+# print (target , ":" , pairs)   
 
+
+# question 9
+# lst = [1, 2, 3, 2, 1]
+# pal = True
+# for i in range(len(lst)//2):
+#     if lst[i] != lst[-i-1]:
+#         pal = False
+#         break
+
+# print(pal)
+
+# question 10
+# num = [1, 2, 2, 3, 4, 4, 5 ]
+# dup = []
+# for i in range (len(num)):
+#    for j in range (i+1 , len(num)):
+#       if num[i] != num[j] and num[i] not in dup:
+         
+#          dup.append(num[i])
+# print (dup)
+
+# questin 11
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [2, 3, 4, 6, 7]
+# dup = []
+
+# for i in list1:
+#     if i in list2 and i not in dup:
+#         dup.append(i)
+# print(dup)
+
+# question 12
+words = ["apple", "banana", "strawberry", "kiwi"]
+for i in range (len(words)):
+    if (words[i] == "strawberry"):
+        print ("it is a strawberry")     
