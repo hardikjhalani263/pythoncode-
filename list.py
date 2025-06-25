@@ -114,7 +114,40 @@
 # print(dup)
 
 # question 12
-words = ["apple", "banana", "strawberry", "kiwi"]
-for i in range (len(words)):
-    if (words[i] == "strawberry"):
-        print ("it is a strawberry")     
+# words = ["apple", "banana", "strawberry", "kiwi"]
+# longest_word = ""
+# for word in words:
+#     if len(word) > len(longest_word):
+#         longest_word = word
+
+# print("The longest word is:", longest_word)
+
+
+# question 13
+# numbers = [1, 2, 4, 5, 6]
+
+# for i in range(1, len(numbers)):
+#     if numbers[i] - numbers[i - 1] != 1:
+#         print("Missing number is:", numbers[i - 1] + 1)
+
+# question 14
+# numbers = [1, 2, 4, 5, 6]
+
+# for i in range(1, len(numbers)):
+#     if numbers[i] - numbers[i - 1] != 1:
+#         print("Missing number is:", numbers[i - 1] + 1)
+
+# question 15 
+# numbers = [4, 5, 1, 2, 0, 4, 5, 2]
+# frequency = {}
+# for num in numbers:
+#     if num in frequency:
+#         frequency[num] += 1
+#     else:
+#         frequency[num] = 1
+# for num in numbers:
+#     if frequency[num] == 1:
+#         print("First non-repeating element is:", num)
+#         break
+
+# question 16
