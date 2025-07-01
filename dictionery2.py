@@ -24,14 +24,14 @@ for i in data:
   print(i)
   mydict["count"]+1
 
-a = "abcdefghijk"
-dict = {"total":10}
-count = 0
-for i in a:
-  if (i== 'a' or i == 'o' or i == 'u' or i == 'e' or i == 'i' ):
-    count +=1
-    dict["total"] = count
-    print(dict)
+# a = "abcdefghijk"
+# dict = {"total":10}
+# count = 0
+# for i in a:
+#   if (i== 'a' or i == 'o' or i == 'u' or i == 'e' or i == 'i' ):
+#     count +=1
+#     dict["total"] = count
+#     print(dict)
 
 data = {}
 for i in range (0,6):
