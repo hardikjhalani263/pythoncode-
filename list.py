@@ -151,3 +151,20 @@
 #         break
 
 # question 16
+# numbers = [0, 1, 0, 3, 12]
+# index = 0
+# for i in range (len(numbers)):
+#     if numbers[i] != 0:
+#         numbers[index] = numbers[i]
+#         index += 1
+# while index < len(numbers):
+#     numbers[index] = 0
+#     index += 1
+# print (numbers)
+
+# question 17
+a = [1, 3, 2, 6, 5, 8, 7]
+
+for i in range (len(a)-1):
+    if(a[i]<a[i+1]):
+     print (a[i+1])
