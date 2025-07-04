@@ -44,5 +44,48 @@
 #  if (i in "aeiou"):
 #   dict[i] = 1
 
-# print (dict)
+# mylist = [10,20,30,10,40,50,50,30]
+# mydictionery ={}
+# for i in mylist:
+#     if(i in mydictionery):
+#         mydictionery[i] = mydictionery[i]+1
+#     else:
+#         mydictionery[i] = 1
+# print (mydictionery)        
 
+
+# s = 'abc'
+# for i in range(0,4):
+#     data  = " "
+#     for j in range (0,i):
+#         print(i,j,s[j])
+#         data = data+s[j]
+#     print ("data ==>" , data )    
+
+
+# s ='abc'
+# data = {}
+# for i in s:
+#     s1 = ''
+#     for j in s:
+#         if(i!=j):
+#             s1+=j
+#     data[s1] = 1
+# print(data)        
+
+
+
+s ='abc'
+dict={}
+
+for i in range(0,len(s)):
+    value=""
+    for j in range(0,len(s)):
+        if(i!=j):
+            value=s[i]+s[j]
+            dict[value]=1
+        if(i==j):
+            dict[s[i]]=1
+
+    data = 1
+print(dict)   

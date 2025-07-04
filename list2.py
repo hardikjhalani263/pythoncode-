@@ -67,15 +67,15 @@
 #     newlist.append(a)
 # print(newlist)    
         
-mylist = [10,20,3,4,5,6,70]
-for n in mylist:
-    count = 1
-    for i in range (n):
-        for j in range (2[i]//2):
-            if (i%j == 0):
-                count +=1
-        if (count == 2):
-            print(n)
+# mylist = [10,20,3,4,5,6,70]
+# for n in mylist:
+#     count = 1
+#     for i in range (n):
+#         for j in range (2[i]//2):
+#             if (i%j == 0):
+#                 count +=1
+#         if (count == 2):
+#             print(n)
 
 
 # mylist = [10,20,123,1234]
@@ -101,4 +101,12 @@ for n in mylist:
 # else:
 #     print(mylist,"not palindrome")
 
+# list1 = [1,2,3,4,5,6]
+# for i in range (len(list1),0,-1):
+#     print(i, end=' ')
 
+data = "wellcome to regex"
+s = ''
+for i in data:
+    s=i+s
+print (s)    
