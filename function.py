@@ -96,9 +96,31 @@ _
 
 # print(f2(90))
 
-def print_numbers(n):
-    if n > 10:
-        return
-    print(n)
-    print_numbers(n + 1)
-print_numbers(1)
+# def print_numbers(n):
+#     if n > 10:                                            ex of recirsion function 
+#         return
+#     print(n)
+#     print_numbers(n + 1)
+# print_numbers(1)
+
+
+# def factorial(n):
+#     if n==1:
+#         return 1
+#     return n*factorial(n-1)
+
+# print(factorial(5))
+
+def f1(n):
+    count = 0
+    if n ==7:
+        return 0
+    while n>0:
+        print(n)
+        count+=1
+        if count ==2:
+            break
+        n-=1
+
+    return f1(n+3)
+f1(3)    
