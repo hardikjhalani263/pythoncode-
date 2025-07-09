@@ -113,7 +113,7 @@ _
 
 def f1(n):
     count = 0
-    if n ==7:
+    if n ==5:
         return 0
     while n>0:
         print(n)
@@ -124,3 +124,15 @@ def f1(n):
 
     return f1(n+3)
 f1(3)    
+
+def febbo(n):
+    a = 0
+    b = 1
+    for i in range(n):
+        next = a+b
+        a = b
+        b = next
+        print(b , end = " ")   
+
+febbo(10) 
+
