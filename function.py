@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 '''
 def function_name ():
      FUNCTION BODY
@@ -112,168 +111,125 @@ _
 
 # print(factorial(5))
 
-def f1(n):
-    count = 0
-    if n ==5:
-        return 0
-    while n>0:
-        print(n)
-        count+=1
-        if count ==2:
-            break
-        n-=1
+# def f1(n):
+#     count = 0
+#     if n ==5:
+#         return 0
+#     while n>0:
+#         print(n)
+#         count+=1
+#         if count ==2:
+#             break
+#         n-=1
 
-    return f1(n+3)
-f1(3)    
+#     return f1(n+3)
+# f1(3)    
 
-def febbo(n):
-    a = 0
-    b = 1
-    for i in range(n):
-        next = a+b
-        a = b
-        b = next
-        print(b , end = " ")   
+# def febbo(n):
+#     a = 0
+#     b = 1
+#     for i in range(n):
+#         next = a+b
+#         a = b
+#         b = next
+#         print(b , end = " ")   
 
-febbo(10) 
+# febbo(10) 
 
-=======
-'''
-def function_name ():
-     FUNCTION BODY
-_
-_
--
-'''
+"""nested function"""
+# def outer():
+#     def inner():
+#         return 10
+#     return inner()
 
-# def display():
-#     print("hi")
-#     print("herllo")
-#     print("bey")
+# print(outer())
 
-# display()
+"""highi oerder function"""
+# def operation(a,b,op):
+#     return op(a,b)
+# def add (a,b):
+#     return a+b
+# def sub (a,b):
+#     return a-b
 
-# a=10
-# b=90
-# sum=a+b
+# print(operation(90,10,sub))
 
-# display()
+# """map function"""
+# data =[1,2,3,4,5]
 
-# def add():
-#     a=10
-#     b=90
-#     sum=a+b
-#     print(sum)
-# add()    
+# def square(n):
+#     return n*n
+# new = list(map(square,data))
+# print(new)
 
-# def add():
-#     a=int(input("enter a no"))
-#     b=int(input("enter a no"))
-#     sum=a+b
-#     print('addition of no',sum)
-# add()    
+# data = list(map(int, input("Enter : ").split()))
+# print(data)
 
-# def f1(a,b):
-#     print(a+b)
+# """filter function"""
+# data =[12,13,57,4,3,56]
+# def filter_num(n):
+#     return n%2==0
+# new=list(filter(filter_num,data))
+# print(new)
 
-# f1(10,45)
-# f1(90,10)
+# """variable argument function"""
+# # print(1,2,3,4,5,6,)
+# def display(*args):
+#     print(args)
+#     print(type(args))
 
-
-# def f1(a,b):
-#     print(a+b)
-#     return "hello"
-
-# print(f1(10,45))
-# f1(10,90)
+# display(9,2,34,45,6,7,34)    
 
 
-# """
-# user define function
-# parameter   return
-#    yes       yes
-#    no        yes
-#    yes       no
-#    no        no
-   
-# """
-
-# def sum():
-#     a= 10
-#     b = 20
-#     sum = a+b
+# def display(*add):
+#     sum =0
+#     for i in add:
+#         sum+=i
 #     return sum
-# sum() 
+# print(add(1,2,3,4,56,11,22,33))    
 
-# def f1(a,b):
-#     print(a+b)
-#     return "hello"
+# def display(*even):
+#     sum = 0
+#     for i in even:
+#         if i%2 ==0:
+#             sum +=i 
+#     return sum           
 
-# print(f1(10,45))
-# f1(10,90)
+# even= int(input("enter a:"))
 
-# def add(a, b):
-#     result = a + b
-#     return result
+# """keywards argument function """
+# def f1 (**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+# f1(a =10,b = 90 , c =89)
 
-# sum = add(5, 3)
-# print("Sum:", sum)
+# def f1(**kwargs):
+#     kwargs['a']=123
+#     return kwargs
+# print (f1(a = 10,b=90,c=89))
 
-# def f1(a = 10,b = 5, c = 0):
-#     return a,b,c
-# print(f1(10,90,))
+# n = int (input ("enter a no ."))
+# if n >1 :
+#     for i in range (2 , n ):
+#         if (n%i ==0 ):
+#             print (n , "is not a prime no .")
+#             break 
+#         else :
+#             print ("it is aprime no.")
 
-
-# """"lamda function """
-# multiply = lambda a,b : a*b
-# print(multiply (10,6))
-
-# def f1():
-#     return "hello from f1"
-# def f2(n):
-#     print(n)
-#     return f1()
-
-# print(f2(90))
-
-# def print_numbers(n):
-#     if n > 10:                                            ex of recirsion function 
-#         return
-#     print(n)
-#     print_numbers(n + 1)
-# print_numbers(1)
+# n = 4867
+# while n>=10:
+#   add = 0
+#   while n > 0:
+#     add += n%10
+#     n //= 10
+#   n = add
+# print(n)
 
 
-# def factorial(n):
-#     if n==1:
-#         return 1
-#     return n*factorial(n-1)
+n = 4867
+d = 0
+while n >= 10:
+    n = sum(int(d) for d in str(n))
 
-# print(factorial(5))
-
-def f1(n):
-    count = 0
-    if n ==5:
-        return 0
-    while n>0:
-        print(n)
-        count+=1
-        if count ==2:
-            break
-        n-=1
-
-    return f1(n+3)
-f1(3)    
-
-def febbo(n):
-    a = 0
-    b = 1
-    for i in range(n):
-        next = a+b
-        a = b
-        b = next
-        print(b , end = " ")   
-
-febbo(10) 
-
->>>>>>> e4549c6dedbff28b19613904c35f1515644cb5fb
+print(n)
