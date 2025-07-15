@@ -88,4 +88,3 @@ for i in range(0,len(s)):
             dict[s[i]]=1
 
     data = 1
-print(dict)   
