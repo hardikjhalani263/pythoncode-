@@ -67,6 +67,43 @@
 #     else:
 #         break     
 
-x = int(input())
-y = int(input())
-print(x-y)
+# try:
+#     a = "shekhar"
+#     print(a+"9")
+# except Exception as e:
+#     print(e)
+
+# """file handling"""
+# try:
+#     age = int(input("enter the age :"))
+#     if age< 18:
+#         print("age error occured")
+#         raise 
+#     else:
+#         print("you are eligible for voting")
+
+# except Exception as e:
+#     print("error is -->>>",e)        
+
+# try:
+#     age = int(input("enter the age :"))
+#     if age< 18:
+#         print("age error occured")
+#         raise Exception
+#     else:
+#         print("you are eligible for voting")
+
+# except Exception as e:
+#     e = "age error"
+#     print("error is -->>>",e) 
+
+try:
+    age = int(input("enter the age :"))
+    if age< 18:
+        print("age error occured")
+        raise ValueError ("error")
+    else:
+        print("you are eligible for voting")
+
+except Exception as e:
+    print("error is -->>>",e)                   
