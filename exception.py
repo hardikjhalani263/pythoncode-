@@ -97,13 +97,40 @@
 #     e = "age error"
 #     print("error is -->>>",e) 
 
-try:
-    age = int(input("enter the age :"))
-    if age< 18:
-        print("age error occured")
-        raise ValueError ("error")
-    else:
-        print("you are eligible for voting")
+# try:
+#     age = int(input("enter the age :"))
+#     if age< 18:
+#         print("age error occured")
+#         raise ValueError ("error")
+#     else:
+#         print("you are eligible for voting")
 
-except Exception as e:
-    print("error is -->>>",e)                   
+# except Exception as e:
+#     print("error is -->>>",e)
+
+# --- Main Program ---
+def atm():
+
+    while True:
+        print("\n--- ATM MENU ---")
+        print("1. Deposit")
+        print("2. Withdraw")
+        print("3. Exit")
+
+        try:
+            choice = int(input("Enter your choice (1-4): "))
+            if choice == 1:
+                amount = float(input("Enter amount to deposit: "))
+                atm.deposit(amount)
+            elif choice == 2:
+                amount = float(input("Enter amount to withdraw: "))
+                atm.withdraw(amount)
+            elif choice == 3:
+                print("Thank you for using the ATM.")
+                break
+            else:
+                print("Invalid choice. Please select 1 to 4.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+        except Exception as e:
+            print("error is -->>>",e)        
