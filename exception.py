@@ -73,7 +73,6 @@
 # except Exception as e:
 #     print(e)
 
-# """file handling"""
 # try:
 #     age = int(input("enter the age :"))
 #     if age< 18:
@@ -108,29 +107,96 @@
 # except Exception as e:
 #     print("error is -->>>",e)
 
-# --- Main Program ---
-def atm():
+# def atm_simulation():
+#     try:
+#         balance =10000
 
-    while True:
-        print("\n--- ATM MENU ---")
-        print("1. Deposit")
-        print("2. Withdraw")
-        print("3. Exit")
+#         while True:
+#             print("""
+#             welcome to my ATM
+#             press 1 for exit
+#             press 2 for deposit
+#             press 3 for withdrow      """)
+#             decision=int(input("enter 1/2/3 :  "))
+#             if decision==1:
+#                 print(" Thanks For Using my ATM")
+#                 break
+#             elif decision==2:
+#                 deposit_amount=int(input("enter the amount to deposit :  "))
+#                 balance+=deposit_amount
+#                 print("your balanceis ",balance)
+#             elif decision==3:
+#                 w_amount=int(input("enter the amount to withdrow : "))
+#                 if balance>=w_amount:
+#                     balance-=w_amount
+#                 else:
+#                     raise ValueError("transaction fail due to insufficent balance")
+#                 print("remaining balance",balance)
+#             else:
+#                 print("invalid input")
+#     except Exception as e:
+#         print("error",e)
+# atm_simulation()          
 
-        try:
-            choice = int(input("Enter your choice (1-4): "))
-            if choice == 1:
-                amount = float(input("Enter amount to deposit: "))
-                atm.deposit(amount)
-            elif choice == 2:
-                amount = float(input("Enter amount to withdraw: "))
-                atm.withdraw(amount)
-            elif choice == 3:
-                print("Thank you for using the ATM.")
-                break
-            else:
-                print("Invalid choice. Please select 1 to 4.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-        except Exception as e:
-            print("error is -->>>",e)        
+    
+# """file handeling"""  
+# # file = open("file_name.extension(txt)','mode")
+# '''
+# r = read
+# w = write
+# a = append
+
+# + - read and write
+# '''
+
+# file = open("regex.txt","r")
+# con = file.read()
+# print(con)
+# file.close()
+
+
+# file = open ("regex.txt",'a')
+# file.write("\n this is append new ")
+# file.close()
+
+# file = open ("regex2.txt", 'a')
+# file.write("i am inside regex2 file")
+# file.close()
+
+# with open("regex.txt",'r') as file:
+#     file.write("line 1")
+#     file.write("\nline2")
+
+# with open("regex.txt","r") as source,open("regex2.txt","a") as destination:
+#     for line in source:
+#         destination.write('\n'+line) 
+
+# with open("regex.txt","r") as source,open("regex2.txt","a") as destination:
+#     context1 = source.read()
+#     context2 = destination.read()
+#     print(context1)
+#     print(context2)
+
+# with open("regex.txt","r") as file:
+#     for line in file :
+#         print (line)
+
+# with open("regex.txt","r") as file:
+#     count = 0
+#     for line in file :
+#         count+=len(line.split())
+#     print(count)   
+
+with open ("regex.txt" , 'r') as file:
+    context=file.read()
+    print(context)
+    
+
+with open ("regex.txt" ,'r+') as file:
+    file.write("line1")
+    file.write("\n line 2")   
+    file.write("\n line 3")   
+    file.write("\n line 4")  
+    # file.write("/n line 2")    
+    file.seek(2)
+    print(file.read())
