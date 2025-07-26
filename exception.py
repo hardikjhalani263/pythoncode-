@@ -187,16 +187,35 @@
 #         count+=len(line.split())
 #     print(count)   
 
-with open ("regex.txt" , 'r') as file:
-    context=file.read()
-    print(context)
+# with open ("regex.txt" , 'r') as file:
+#     context=file.read()
+#     print(context)
     
 
-with open ("regex.txt" ,'r+') as file:
-    file.write("line1")
-    file.write("\n line 2")   
-    file.write("\n line 3")   
-    file.write("\n line 4")  
-    # file.write("/n line 2")    
-    file.seek(2)
-    print(file.read())
+# with open ("regex.txt" ,'r+') as file:
+#     file.write("line1")
+#     file.write("\n line 2")   
+#     file.write("\n line 3")   
+#     file.write("\n line 4")  
+#     # file.write("/n line 2")    
+#     file.seek(2)
+#     print(file.read())
+
+# with open ("regex2.txt" ,'r+') as file:
+#     file.write("line1")
+#     file.write("\n line 2")   
+#     file.write("\n line 3")   
+#     file.write("\n line 4")  
+#     # file.write("/n line 2")    
+#     file.seek(2)
+#     print(file.read())
+
+# with open ("regex.txt" , 'r+') as file:
+#     print("position of your pointer is :" ,file.tell())
+    # print (file.read())
+
+a = 15
+b = 3
+c = 4
+result = a + b * c // ( c % b ) - 5
+print( result )
