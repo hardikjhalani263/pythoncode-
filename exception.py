@@ -187,6 +187,7 @@
 #         count+=len(line.split())
 #     print(count)   
 
+
 # with open ("regex.txt" , 'r') as file:
 #     context=file.read()
 #     print(context)
@@ -197,9 +198,10 @@
 #     file.write("\n line 2")   
 #     file.write("\n line 3")   
 #     file.write("\n line 4")  
-#     # file.write("/n line 2")    
+     # file.write("/n line 2")    
 #     file.seek(2)
 #     print(file.read())
+
 
 # with open ("regex2.txt" ,'r+') as file:
 #     file.write("line1")
@@ -210,12 +212,34 @@
 #     file.seek(2)
 #     print(file.read())
 
+
 # with open ("regex.txt" , 'r+') as file:
 #     print("position of your pointer is :" ,file.tell())
     # print (file.read())
 
-a = 15
-b = 3
-c = 4
-result = a + b * c // ( c % b ) - 5
-print( result )
+# with open ("regex.txt" , 'x')as file:
+#     print("the file is creat")
+
+
+"""list comprehension"""
+# data = list(map(int,input().split(" ")))    
+# print(data)
+
+# data1 = [1,2,3,4]
+# data = [2*i for i in range(1,11)]
+# print(data)
+
+# data1 = [1,2,3,4]
+# data = [f'*{i**2}*' for i in data1]
+# print(data)
+
+# data1 = [1,2,3,4]
+# data = [f"{'*' * i,i**2 , '*' * i} " for i  in data1]
+# print(data)
+
+# data =[x+y for x in range(3,5)for y in range(1,3)]
+# print(data)
+
+data1 = [[1,2],[3,4],[5,6]]
+data = [i for i in data1 for i in i ]
+print (data)
