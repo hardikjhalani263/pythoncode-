@@ -139,7 +139,7 @@
 # atm_simulation()          
 
     
-# """file handeling"""  
+"""file handeling"""  
 # # file = open("file_name.extension(txt)','mode")
 # '''
 # r = read
@@ -240,6 +240,10 @@
 # data =[x+y for x in range(3,5)for y in range(1,3)]
 # print(data)
 
-data1 = [[1,2],[3,4],[5,6]]
-data = [i for i in data1 for i in i ]
-print (data)
+# data1 = [[1,2],[3,4],[5,6]]
+# data = [i for i in data1 for i in i ]
+# print (data)
+
+# list = ['abc',23,'xyz',90]
+# data =[x for x in list if type(x)== int]
+# print(data)
