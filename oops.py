@@ -205,24 +205,47 @@
 
 """polymorphism"""
 
-class animal:
-    def make_sound(self):
-        print("some generic sound")
+# class animal:
+#     def make_sound(self):
+#         print("some generic sound")
 
-class dog:
-    def make_sound(self):
-        print("booooooofffff")
+# class dog:
+#     def make_sound(self):
+#         print("booooooofffff")
 
-class cat:
-    def make_sound(self):
-        print("mmeeeeeeeooooooo")
+# class cat:
+#     def make_sound(self):
+#         print("mmeeeeeeeooooooo")
 
-def call(obj):
-     obj.make_sound()
+# def call(obj):
+#      obj.make_sound()
 
-a = animal()
-b = dog()
-c = cat()
+# a = animal()
+# b = dog()
+# c = cat()
 
-call (a)
-call (b)
+# call (a)
+# call (b)
+
+"""method overloading"""
+
+class c1:
+    # def operation(self,a):
+    #     print(a)
+    # def operation(self,a,b):
+    #     print(a+b)
+
+    # def operation(self,a,b,c):
+    #     print(a*b*c)
+    def operations(self,a,b=0,c= 0):
+        if b == 0 and c == 0:
+            print (a)
+        elif c ==0:
+            print (a+b)
+        else:
+            print (a*b*c)
+
+obj = c1()
+obj .operations(10,10,10)                
+
+
