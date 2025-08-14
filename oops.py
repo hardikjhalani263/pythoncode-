@@ -229,23 +229,37 @@
 
 """method overloading"""
 
+# class c1:
+#     # def operation(self,a):
+#     #     print(a)
+#     # def operation(self,a,b):
+#     #     print(a+b)
+
+#     # def operation(self,a,b,c):
+#     #     print(a*b*c)
+#     def operations(self,a,b=0,c= 0):
+#         if b == 0 and c == 0:
+#             print (a)
+#         elif c ==0:
+#             print (a+b)
+#         else:
+#             print (a*b*c)
+
+# obj = c1()
+# obj .operations(10,10,10)                
+
 class c1:
-    # def operation(self,a):
-    #     print(a)
-    # def operation(self,a,b):
-    #     print(a+b)
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
 
-    # def operation(self,a,b,c):
-    #     print(a*b*c)
-    def operations(self,a,b=0,c= 0):
-        if b == 0 and c == 0:
-            print (a)
-        elif c ==0:
-            print (a+b)
-        else:
-            print (a*b*c)
+    def __add__(self,other):
+        num1=self.a+other.a
+        num2 =self.b+other.b
+        return (num1+num2)
 
-obj = c1()
-obj .operations(10,10,10)                
-
+obj1 = c1(10,90) 
+obj2 = c1(80,10) 
+print(obj1. __add__(obj2))         
+# print(obj1+obj2)
 
