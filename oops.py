@@ -248,18 +248,19 @@
 # obj = c1()
 # obj .operations(10,10,10)                
 
-class c1:
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
+# class c1:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
 
-    def __add__(self,other):
-        num1=self.a+other.a
-        num2 =self.b+other.b
-        return (num1+num2)
+#     def __add__(self,other):
+#         num1=self.a+other.a
+#         num2 =self.b+other.b
+#         return (num1+num2)
 
-obj1 = c1(10,90) 
-obj2 = c1(80,10) 
-print(obj1. __add__(obj2))         
-# print(obj1+obj2)
+# obj1 = c1(10,90) 
+# obj2 = c1(80,10) 
+# print(obj1. __add__(obj2))         
+# # print(obj1+obj2)
+
 
